@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Confirm Order</title>
+  <style>
+    body 
+    {
+         background-image: url('anichh.jpg'); /* or 'images/background.jpg' */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+            height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    .form-wrapper {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.5); /* semi-transparent overlay */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+            color: white;
+        }
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-bottom: 30px;
+    }
+
+    #message {
+      font-size: 24px;
+      font-weight: bold;
+      color: rgb(128, 0, 32);
+      display: none;
+    }
+  </style>
+</head>
+<body>
+    <div class="form-wrapper">
+  <h2 id="confirm-text">Confirm Your Order</h2>
+  <button onclick="confirmOrder()">Confirm</button>
+  </div>
+  <br></br>
+  <div id="message">Happy Shopping!!</div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const product = params.get("product");
+    const username = params.get("userid");
+
+    // ✅ Step 2: Show dynamic confirmation text
+    const confirmText = document.getElementById("confirm-text");
+    confirmText.textContent = `Confirm your order for "${product}"`;
+
+    function confirmOrder() {
+         const message = document.getElementById("message");
+      message.textContent = `Order Confirmed !`;
+      message.style.display = "block";
+
+      // Show message
+      
+
+      // Redirect after 2 seconds
+      setTimeout(() => 
+      {
+        window.location.href = "happy.html"; // Replace with your actual page
+      }, 3000);
+    }
+  </script>
+</body>
+</html>

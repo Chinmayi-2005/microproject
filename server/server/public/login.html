@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <style>
+        body {
+            background-image: url('anichh.jpg'); /* or 'images/background.jpg' */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .form-wrapper {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.5); /* semi-transparent overlay */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+            color: white;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+        }
+
+        input {
+            width: 300px;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        button {
+            background-color: rgb(64, 146, 209);
+            color: white;
+            border: none;
+            border-radius: 3px;
+            padding: 10px 40px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            opacity: 0.7;
+        }
+
+        button:active {
+            opacity: 0.4;
+        }
+
+        a {
+            display: block;
+            margin-top: 20px;
+            color: #fff;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-wrapper">
+        <h1>Login Please !!!</h1>
+        <input type="text" placeholder="Enter username" id="username">
+        <input type="email" placeholder="Enter your Email id" id="email">
+        <button onclick="login()">Login</button>
+        <a href="signup.html" target="_blank">Signup</a>
+    </div>
+
+   <script src="script.js"></script>
+</body>
+</html>

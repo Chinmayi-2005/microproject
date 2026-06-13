@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anichh</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="inner">
+            <div class="img1"><img src="ChatGPT Image Oct 1, 2025, 09_52_16 AM.png" alt="nothing" id="image"></div>
+           
+            <div class="inputcont"><input type="text" placeholder="search product" id="search" oninput="searchProduct()">
+
+                
+            <button id="loginBtn" onclick="goToHome()">Logout</button></div></div></div>
+        <div class="innerimg"><img src="https://i.pinimg.com/1200x/9f/b1/18/9fb118d3d637cf3ac9bba3343ac52e69.jpg" alt="no" id="img3"></div>
+                <div id="products"></div>
+        <footer>contact</footer>
+    
+    <style>
+        body
+        {
+            background-color: rgb(242, 226, 220);
+            
+        }
+        .inner
+        {
+            background-color: rgb(242, 226, 220);
+            width: 100%;        /* make responsive instead of 3500px */
+            height: 200px;
+            display: flex;      /* flexbox */
+            align-items: center;/* vertical alignment */
+             /* spacing between elements */
+            padding: 0 20px;
+        }
+     
+        input{
+            margin-left: 50px;
+            width: 1000px;
+            margin-right: 30px;
+            border: none;
+            border-radius: 5px;
+            padding-top: 7.5px;
+            padding-bottom: 7.5px;
+         box-shadow: 0px 6px 15px rgba(65, 60, 60, 0.6);
+        }
+        #image
+        {
+            
+            margin-left: 20px;
+            
+           width: 150px;
+        }
+        .inputcont{
+            display: flex;
+
+        }
+       
+        button{
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: rgb(138, 21, 56);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-weight: bolder;
+            cursor: pointer;
+        }
+        button:hover{
+            opacity: 0.7;
+        }
+        button:active{
+            opacity: 0.4;
+        }
+        .innerimg 
+        {
+        width: 100%;
+        margin: 0;           /* remove gap */
+        padding: 0;
+        }
+footer{
+    margin-left: 40px;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+
+#img3 {
+    width: 1537px;         /* cover full width */
+    height: 500px;        /* keep natural aspect ratio */
+    display: block;      /* remove tiny space */
+}
+       
+    </style>
+    <script src="script.js"></script>
+    
+</body>
+</html>
